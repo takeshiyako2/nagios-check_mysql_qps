@@ -15,8 +15,17 @@ $ bundle
 Run script
 ```
 $ ruby check_mysql_qps.rb -H localhost -u username -p xxxx -w 500 -c 900
+OK - Current Status is saved. queries:10000, unixtime:1423816070
+
+$ ruby check_mysql_qps.rb -H localhost -u username -p xxxx -w 500 -c 900
 OK - 123 Queries per second|QPS=123
 ```
+
+Remove tmp file for nagios check.
+```
+$ rm /tmp/check_mysql_qps.dat
+```
+
 
 ## Auteur
 
